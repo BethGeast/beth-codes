@@ -1,4 +1,38 @@
-<div>
+<%# <div>
   <h1>Home</h1>
   <p>pages#home</p>
+</div> %>
+
+<%# 4 cards linking to each page, plus long rectangular card above these
+containing short intro inside %>
+<div class="body-container">
+  <div class="grouped-cards">
+    <div class="wide-card col-8">
+      <p id="intro-card">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+    </div>
+    <div class="card-row col-8">
+      <%= link_to about_path, class: 'card-link col-5' do %>
+        <div class="button-card">
+          <p>About Me</p>
+        </div>
+      <% end %>
+      <%= link_to projects_path, class: 'card-link col-5' do %>
+        <div class="button-card">
+          <p>Projects</p>
+        </div>
+      <% end %>
+    </div>
+    <div class="card-row col-8">
+      <%= link_to resume_path, class: 'card-link col-5' do %>
+        <div class="button-card">
+          <p>Resume</p>
+        </div>
+      <% end %>
+      <%= link_to contact_path, class: 'card-link col-5' do %>
+        <div class="button-card">
+          <p>Contact</p>
+        </div>
+      <% end %>
+    </div>
+  </div>
 </div>
