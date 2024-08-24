@@ -39,8 +39,10 @@
  .navbar-logo {
   padding-left: 0px;
   display: flex;
-  flex-grow: 1;
+  flex-shrink: 1;
   justify-content: center;
+  max-height: 75px;
+  width: auto;
  }
 
  .navbar-logo img {
