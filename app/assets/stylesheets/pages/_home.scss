@@ -49,6 +49,13 @@
     height: auto;
     border-radius: 3px;
     flex: 1 1 auto;
+    transition: 0.3s;
+  }
+
+  .button-card:hover {
+    background-color: $faint-pink;
+    color: $even-darker-pink;
+    border: 1px solid $darkest-pink;
   }
 
   .button-card p {
