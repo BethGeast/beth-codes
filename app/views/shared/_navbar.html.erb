@@ -1,19 +1,21 @@
-<div class="navbar-bethcodes">
-  <span class="navbar-logo col-3">
-    <%= link_to root_path, class: "navbar-logo" do %>
-      <%= image_tag "logo.png", alt: "BethCodes logo" %>
-    <% end %>
-  </span>
-  <span class="navbar-bethcodes-titles-about container-sm col-2">
-    <%= link_to "About", about_path %>
-  </span>
-  <span class="navbar-bethcodes-titles container-sm col-2">
-    <%= link_to "Resume", resume_path %>
-  </span>
-  <span class="navbar-bethcodes-titles container-sm col-2">
-    <%= link_to "Projects", projects_path %>
-  </span>
-  <span class="navbar-bethcodes-titles container-sm col-2">
-    <%= link_to "Contact", contact_path %>
-  </span>
+<div class="navbar-container">
+  <div class="navbar-bethcodes">
+    <span class="navbar-logo">
+      <%= link_to root_path, class: "navbar-logo" do %>
+        <%= image_tag "logo.png", alt: "BethCodes logo" %>
+      <% end %>
+    </span>
+    <span class="navbar-bethcodes-titles-about">
+      <%= link_to "About", about_path %>
+    </span>
+    <span class="navbar-bethcodes-titles">
+      <%= link_to "Resume", resume_path %>
+    </span>
+    <span class="navbar-bethcodes-titles">
+      <%= link_to "Projects", projects_path %>
+    </span>
+    <span class="navbar-bethcodes-titles">
+      <%= link_to "Contact", contact_path %>
+    </span>
+  </div>
 </div>
