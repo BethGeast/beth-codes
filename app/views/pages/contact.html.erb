@@ -1,2 +1,39 @@
-<h1>Contact</h1>
-<h3>pages#contact</h3>
+<%# pages#contact %>
+<div class="contact-page-container">
+  <div class="contact-elements-container col-12 col-md-10">
+    <span class="contact-text-container col-12 col-md-10">
+      <h3>
+        Reach out to me easily via any of the below:
+      </h3>
+    </span>
+    <div class="contact-card-container col-12 col-md-10">
+      <div class="row social-media-links col-10">
+
+
+        <span class="contact-card col-10 col-md-5">
+          <i class="fa-brands fa-square-github"></i>
+          <%= link_to "GitHub: BethGeast", "https://github.com/BethGeast", target: "_blank" %>
+        </span>
+
+
+        <span class="contact-card col-10 col-md-5">
+          <i class="fa-brands fa-linkedin"></i>
+          <%= link_to "LinkedIn: bethgeast", "https://www.linkedin.com/in/bethgeast/", target: "_blank" %>
+        </span>
+
+
+        <span class="contact-card col-10 col-md-5">
+          <i class="fa-solid fa-at"></i>
+          <%= 'beth.codes1@gmail.com' %>
+          <%# <p>  beth.codes1@gmail.com</p> %>
+        </span>
+
+
+        <span class="contact-card col-10 col-md-5">
+          <i class="fa-solid fa-envelope"></i>
+          <%= link_to "Drop me a message", "mailto:beth.codes1@gmail.com", target: "_blank" %>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
