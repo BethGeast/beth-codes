@@ -2,38 +2,51 @@
 <div class="contact-page-container">
   <div class="contact-elements-container col-12 col-md-10">
     <span class="contact-text-container col-12 col-md-10">
-      <h3>
-        Reach out to me easily via any of the below:
-      </h3>
+      <h3>Reach out to me easily via any of the below:</h3>
     </span>
     <div class="contact-card-container col-12 col-md-10">
       <div class="row social-media-links col-10">
-
-
         <span class="contact-card col-10 col-md-5">
           <i class="fa-brands fa-square-github"></i>
-          <%= link_to "GitHub: BethGeast", "https://github.com/BethGeast", target: "_blank" %>
+          <%= link_to "GitHub", "https://github.com/BethGeast", target: "_blank" %>
         </span>
-
 
         <span class="contact-card col-10 col-md-5">
           <i class="fa-brands fa-linkedin"></i>
-          <%= link_to "LinkedIn: bethgeast", "https://www.linkedin.com/in/bethgeast/", target: "_blank" %>
+          <%= link_to "LinkedIn", "https://www.linkedin.com/in/bethgeast/", target: "_blank" %>
         </span>
-
 
         <span class="contact-card col-10 col-md-5">
           <i class="fa-solid fa-at"></i>
-          <%= 'beth.codes1@gmail.com' %>
-          <%# <p>  beth.codes1@gmail.com</p> %>
+          <%= link_to "Email", "mailto:beth.codes1@gmail.com", target: "_blank" %>
         </span>
 
-
-        <span class="contact-card col-10 col-md-5">
+        <span class="contact-card col-10 col-md-5" data-controller="contact" data-action="click->contact#toggleForm">
           <i class="fa-solid fa-envelope"></i>
-          <%= link_to "Drop me a message", "mailto:beth.codes1@gmail.com", target: "_blank" %>
+          <%# <%= link_to "Drop me a message", "#", data-action="click->contact#preventDefault" %>
+          <a href="#" data-action="click->contact#preventDefault">Drop me a message</a>
         </span>
       </div>
     </div>
+  </div>
+
+  <div id="contact-form" class="container col-10 col-md-8" style="display: none;">
+    <%= simple_form_for :contact, url: send_contact_email_path, data: { turbo_frame: "_top" } do |f| %>
+      <div class="form-group">
+        <%= f.input :name, required: true, label: 'Your Name' %>
+      </div>
+      <div class="form-group">
+        <%= f.input :title, required: true, label: 'Message Title' %>
+      </div>
+      <div class="form-group">
+        <%= f.input :email, required: true, label: 'Your Contact Email Address' %>
+      </div>
+      <div class="form-group">
+        <%= f.input :message, as: :text, required: true, label: 'Your Message' %>
+      </div>
+      <div class="form-button">
+        <%= f.button :submit, 'Send Message', data: { action: "contact#submitForm" } %>
+      </div>
+    <% end %>
   </div>
 </div>
