@@ -166,3 +166,35 @@
   font-size: 20px;
   text-align: center;
 }
+
+@media (max-width: 576px) {
+  .contact-elements-container {
+    margin-top: 100px;
+  }
+
+  .contact-success-container {
+    margin-bottom: 100px;
+  }
+
+  #contact-success-notice {
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 400px) {
+  .contact-elements-container {
+    margin-top: 75px;
+  }
+
+  .contact-text-container h3 {
+    margin-bottom: 20px;
+  }
+
+  .contact-success-container {
+    margin-bottom: 125px;
+  }
+
+  #contact-success-notice {
+    margin-bottom: 100px;
+  }
+}
