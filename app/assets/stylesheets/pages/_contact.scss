@@ -2,21 +2,16 @@
 
 .contact-page-container {
   width: 100vw;
-  // margin: 0 auto;
   min-height: 100vh;
-  // display: flex;
-  // margin-bottom: 100px;
 }
 
 .contact-elements-container {
-  // width: 100%;
   display: flex;
   margin: 0 auto;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   margin-top: 125px;
-  // margin-bottom: 100px;
 }
 
 .contact-text-container {
@@ -36,9 +31,7 @@
 
 .contact-card-container {
   display: flex;
-  // flex-direction: row;
   align-items: center;
-  // margin: 0 auto;
   flex-grow: 1;
   justify-content: space-between;
 }
@@ -46,21 +39,15 @@
 .social-media-links {
   display: flex;
   flex-direction: row;
-  // margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   flex-grow: 1;
-  // margin: 0;
 }
 
 .contact-card {
   border-radius: 3px;
-  // color: $even-darker-pink;
   color: $darkest-pink;
   background-color: $white;
-  // background-color: $barbie-pink;
-  // text-decoration: none;
-  // border: 2px solid black;
   margin: 16px;
   text-align: center;
   justify-content: center;
@@ -68,16 +55,13 @@
   padding: 20px;
   font-size: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  // display: inline-block;
   flex-grow: 1;
 
   a {
     text-decoration: none;
-    // color: $even-darker-pink;
     color: $darkest-pink;
     transition: 0.3s;
     padding: 16px;
-    // padding-left: 8px;
     padding-left: 0;
     margin: 0;
     margin-top: 8px;
@@ -85,19 +69,15 @@
   }
 
   a:hover {
-    // font-size: 22px;
     color: $soft-light-pink;
-    // font-weight: bolder;
   }
 
   i {
-    // color: $even-darker-pink;
     color: $darkest-pink;
     padding-right: 8px;
   }
 
   p {
-    // color: $even-darker-pink;
     color: $darkest-pink;
   }
 }
