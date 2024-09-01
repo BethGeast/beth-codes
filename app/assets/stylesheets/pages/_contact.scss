@@ -69,7 +69,9 @@
   }
 
   a:hover {
-    color: $soft-light-pink;
+    // color: $soft-light-pink;
+    // color: $barbie-pink;
+    color: $hot-pink;
   }
 
   i {
@@ -99,7 +101,10 @@
 
   .form-label {
     color: $darkest-pink;
+    // color: $even-darker-pink;
+    font-weight: 500;
     margin-top: 4px;
+    font-size: 18px;
   }
 
   #contact_message {
@@ -142,8 +147,10 @@
 }
 
 #contact-success-notice {
-  color: $even-darker-pink;
+  // color: $even-darker-pink;
+  color: $darkest-pink;
   font-size: 20px;
+  font-weight: 500;
   text-align: center;
 }
 
