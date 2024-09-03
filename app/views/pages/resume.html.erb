@@ -1,1 +1,69 @@
 <%# pages#resume %>
+<%# <p>started career in nursing, working in acute care. after one year as a newly qualified nurse
+  I was offered a senior position. ambitious and pick up new skills fast. working in nursing
+  proves my skills in communication, trustworthiness and incredible attention to detail.
+  in senior role i was a nurse therapist, further proving empathetic skills.
+</p>
+<p>to preserve my wellbeing for the long term, i moved away from this career path to
+  pursue a different
+  interest - coding. invested time and money in a bootcamp where i was able to develop
+  a web app from scratch and release into production in under 10 weeks. was lead developer
+  for 2 projects, demonstrating leadership qualities and ability to work within a team,
+  and ability to delegate tasks.</p> %>
+
+<div class="resume-container">
+  <div class="row resume-link-container col-10">
+    <div class="resume-link">
+      <%= link_to 'Click here to view my full resume', '/downloads/bethcodes-resume.pdf', download: 'bethcodes-resume.pdf' %>
+    </div>
+  </div>
+  <div class="row tech-skills-container">
+    <div class="tech-skills-card col-10 col-sm-3">
+      <h3 class="tech-card-title">Key Stack</h3>
+      <div class="split-list">
+        <ul class="tech-skill">
+          <% @techstack_one.each do |skill_one| %>
+            <li><%= skill_one %></li>
+          <% end %>
+        </ul>
+        <ul class="tech-skill">
+          <% @techstack_two.each do |skill_two| %>
+            <li><%= skill_two %></li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+
+    <div class="tech-skills-card col-10 col-sm-3">
+      <h3 class="tech-card-title">Additional</h3>
+      <ul class="tech-skill">
+        <% @other.each do |other_skill| %>
+          <li><%= other_skill %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <div class="tech-skills-card col-10 col-sm-3">
+      <h3 class="tech-card-title">In Progress</h3>
+      <ul class="tech-skill">
+        <% @learning.each do |learning_skill| %>
+          <li><%= learning_skill %></li>
+        <% end %>
+      </ul>
+    </div>
+
+    <%# <br> %>
+
+    <div class="row bonus-card col-10 col-sm-6">
+      <h3 class="tech-card-title">Bonus Skills</h3>
+      <div class="bonus-split-list">
+        <ul class="bonus-skill">
+          <li><%= @bonus_left %></li>
+        </ul>
+        <ul class="bonus-skill">
+          <li><%= @bonus_right %></li>
+        </ul>
+      </div>
+    </div>
+
+</div>

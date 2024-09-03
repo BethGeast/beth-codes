@@ -29,11 +29,14 @@ class PagesController < ApplicationController
   end
 
   def resume
-    @techstack = ["Ruby", "Ruby On Rails", "HTML5", "CSS/SCSS", "Javascript", "Git", "Github", "TDD", "Z-Shell", "Visual Studio Code", "Ubuntu"]
-    @other = ["Python", "SQL & PostgreSQL", "Heroku", "Stimulus", "Bootstrap", "Redis", "Cloudinary", "Action Cable", "Websocket", "Figma"]
-    @learning = ["React", "Redux", "Webpack"]
-    @additional = ["Full Clean UK Driving Licence", "Microsoft Office"]
-    @strengths = ["Trustworthy & Reliable", "Empathetic & Approachable", "Fast Learner", "Dedicated", "Strong Listener", "Team Player", "Organisation"]
+    @techstack_one = ["Ruby", "Ruby On Rails", "HTML5", "CSS/SCSS", "Bootstrap", "Javascript", "Stimulus", "ActiveRecord"]
+    @techstack_two = ["Git", "Github", "Test Driven Development", "Z-Shell", "Visual Studio Code", "Ubuntu", "Heroku"]
+    @other = ["Python", "SQL & PostgreSQL", "Redis", "Cloudinary", "Action Cable", "Websocket", "Figma"]
+    @learning = ["React", "Redux", "Webpack", "Node.js", "AWS"]
+    @bonus = ["Microsoft Office Suite", "Full Clean UK Driving Licence"]
+    @bonus_left = @bonus[0]
+    @bonus_right = @bonus[1]
+    # @strengths = ["Trustworthy & Reliable", "Empathetic & Approachable", "Fast Learner", "Dedicated", "Strong Listener", "Team Player", "Organisation"]
   end
 
   def projects

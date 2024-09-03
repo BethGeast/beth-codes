@@ -1,1 +1,211 @@
 // resume page styling
+.resume-container {
+  margin: 0 auto;
+  width: 100%;
+  margin-top: 125px;
+  margin-bottom: 125px;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.resume-link-container {
+  background-color: $white;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 12px;
+  flex: 1 1 auto;
+}
+
+.resume-link {
+  text-align: center;
+  font-weight: bolder;
+  font-size: 2rem;
+  background: linear-gradient(to right, $darkest-pink 8%, $hot-pink 18%, $darkest-pink 33%);
+  background-size: 1000px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s infinite linear;
+}
+
+.resume-link :hover {
+  background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
+  background-size: 1000px 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: shimmer 2s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.tech-skills-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  // flex-grow: 1;
+  // flex: 1 1 auto;
+  width: 100%;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+.tech-skills-card {
+  background-color: $white;
+  justify-content: center;
+  flex-grow: 1;
+  text-align: center;
+  margin: 24px;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tech-card-title {
+  font-size: 24px;
+  color: $darkest-pink;
+  font-weight: bolder;
+  margin-top: 16px;
+}
+
+.tech-skill {
+  color: $even-darker-pink;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.split-list {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 16px;
+  margin: 12px;
+  // flex: 1 1 auto;
+
+  .tech-skill {
+    width: 50%;
+  }
+}
+
+.bonus-card {
+  background-color: $white;
+  justify-content: center;
+  // flex-grow: 1;
+  text-align: center;
+  margin: 24px;
+  padding: 8px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.bonus-split-list {
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: flex;
+}
+
+.bonus-skill {
+  // flex-direction: row;
+  // justify-content: space-evenly;
+  // margin: 12px;
+  color: $even-darker-pink;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 12px;
+  padding-left: 0;
+  list-style: none;
+  width: 50%;
+}
+
+@media (max-width: 1000px) {
+  .tech-skill {
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .tech-card-title {
+    font-size: 20px;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .split-list {
+    margin: 8px;
+    gap: 12px;
+  }
+
+  .bonus-skill {
+    font-size: 10px;
+    font-weight: 300;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  }
+
+  .bonus-split-list {
+    margin: 8px;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .tech-skills-container {
+    flex-direction: column;
+    flex-shrink: 1;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .resume-link {
+    font-size: 20px;
+  }
+
+  .tech-card-title {
+    font-size: 16px;
+  }
+
+  .tech-skills-card {
+    margin: 16px;
+  }
+
+  .resume-container {
+    margin-top: 120px;
+    margin-bottom: 104px;
+  }
+
+  .bonus-card {
+    margin: 16px;
+  }
+}
+
+@media (max-width: 450px) {
+  .resume-container {
+    margin-top: 104px;
+  }
+}
+
+@media (max-width: 400px) {
+  .resume-container {
+    margin-top: 88px;
+    margin-bottom: 88px;
+  }
+}
+
+// @media (max-width: 376px) {
+//   .resume-container {
+//     margin-top: 88px;
+//   }
+// }
