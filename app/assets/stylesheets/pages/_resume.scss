@@ -2,7 +2,7 @@
 .resume-container {
   margin: 0 auto;
   width: 100%;
-  margin-top: 125px;
+  margin-top: 150px;
   margin-bottom: 125px;
   justify-content: center;
   align-items: center;
@@ -52,8 +52,6 @@
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  // flex-grow: 1;
-  // flex: 1 1 auto;
   width: 100%;
   margin-top: 24px;
   margin-bottom: 24px;
@@ -92,7 +90,6 @@
   flex-direction: row;
   gap: 16px;
   margin: 12px;
-  // flex: 1 1 auto;
 
   .tech-skill {
     width: 50%;
@@ -102,7 +99,6 @@
 .bonus-card {
   background-color: $white;
   justify-content: center;
-  // flex-grow: 1;
   text-align: center;
   margin: 24px;
   padding: 8px;
@@ -117,9 +113,6 @@
 }
 
 .bonus-skill {
-  // flex-direction: row;
-  // justify-content: space-evenly;
-  // margin: 12px;
   color: $even-darker-pink;
   font-size: 16px;
   font-weight: 400;
@@ -203,9 +196,3 @@
     margin-bottom: 88px;
   }
 }
-
-// @media (max-width: 376px) {
-//   .resume-container {
-//     margin-top: 88px;
-//   }
-// }
