@@ -3,12 +3,14 @@
 .navbar-container {
   width: 100%;
   display: flex;
+  z-index: 1000;
 }
 
 
 .navbar-container .navbar-bethcodes {
   // position: sticky;
   position: fixed;
+  z-index: 9999;
   top: 0;
   width: 100%;
   display: flex;
