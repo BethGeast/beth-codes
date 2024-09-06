@@ -1,1 +1,43 @@
 // projects page styling
+.back-button-projects {
+  font-size: 32px;
+  position: absolute;
+  top: 100px;
+  margin-left: 36px;
+
+  i {
+    text-decoration: none;
+    color: $darkest-pink;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  &:hover i {
+    color: $white;
+    background-color: $hot-pink;
+    border: 1px solid $darkest-pink;
+  }
+}
+
+@media (max-width: 576px) {
+  .back-button-projects {
+    top: 85px !important;
+    margin-left: 24px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .back-button-projects {
+    top: 70px !important;
+    margin-left: 20px !important;
+  }
+}
+
+@media (max-width: 400px) {
+  .back-button-projects {
+    top: 60px !important;
+    margin-left: 20px !important;
+  }
+}

@@ -1,4 +1,25 @@
 // contact page styling
+.back-button-contact {
+  font-size: 32px;
+  position: absolute;
+  top: 100px;
+  margin-left: 36px;
+
+  i {
+    text-decoration: none;
+    color: $darkest-pink;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  &:hover i {
+    color: $white;
+    background-color: $hot-pink;
+    border: 1px solid $darkest-pink;
+  }
+}
 
 .contact-page-container {
   width: 100vw;
@@ -63,7 +84,7 @@
   a {
     text-decoration: none;
     color: $darkest-pink;
-    transition: 0.3s;
+    transition: 0.3s ease;
     padding: 16px;
     padding-left: 0;
     margin: 0;
@@ -74,6 +95,7 @@
   i {
     color: $darkest-pink;
     padding-right: 8px;
+    transition: 0.3s ease;
   }
 
   p {
@@ -135,7 +157,7 @@
     padding-bottom: 6px;
     border-radius: 3px;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.3s ease;
   }
 
   .btn:hover {
@@ -156,6 +178,11 @@
   font-size: 20px;
   font-weight: 500;
   text-align: center;
+  background-color: $white;
+  border: 2px solid $hot-pink;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 16px;
 }
 
 @media (max-width: 800px) {
@@ -167,7 +194,7 @@
 
 @media (max-width: 576px) {
   .contact-elements-container {
-    margin-top: 100px;
+    margin-top: 125px;
   }
 
   .contact-success-container {
@@ -177,11 +204,23 @@
   #contact-success-notice {
     margin-bottom: 100px;
   }
+
+  .back-button-contact {
+    top: 85px !important;
+    margin-left: 24px !important;
+  }
+}
+
+@media (max-width: 450px) {
+  .back-button-contact {
+    top: 70px !important;
+    margin-left: 20px !important;
+  }
 }
 
 @media (max-width: 400px) {
   .contact-elements-container {
-    margin-top: 75px;
+    margin-top: 100px;
   }
 
   .contact-text-container h3 {
@@ -194,5 +233,10 @@
 
   #contact-success-notice {
     margin-bottom: 100px;
+  }
+
+  .back-button-contact {
+    top: 60px !important;
+    margin-left: 20px !important;
   }
 }
