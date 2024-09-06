@@ -34,6 +34,7 @@
   align-items: center;
   flex-grow: 1;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 .social-media-links {
@@ -48,6 +49,7 @@
   border-radius: 3px;
   color: $darkest-pink;
   background-color: $white;
+  text-decoration: none;
   margin: 16px;
   text-align: center;
   justify-content: center;
@@ -56,6 +58,7 @@
   font-size: 20px;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   flex-grow: 1;
+  transition: 0.3s ease;
 
   a {
     text-decoration: none;
@@ -68,10 +71,6 @@
     margin-bottom: 8px;
   }
 
-  a:hover {
-    color: $soft-light-pink;
-  }
-
   i {
     color: $darkest-pink;
     padding-right: 8px;
@@ -79,6 +78,15 @@
 
   p {
     color: $darkest-pink;
+  }
+}
+
+.contact-card:hover {
+  background-color: $darkest-pink;
+  color: $white;
+
+  i {
+    color: $white;
   }
 }
 
@@ -146,6 +154,13 @@
   font-size: 20px;
   text-align: center;
 }
+
+@media (max-width: 800px) {
+  .contact-page-container {
+    margin-bottom: 125px;
+  }
+}
+
 
 @media (max-width: 576px) {
   .contact-elements-container {
