@@ -3,7 +3,6 @@ class PagesController < ApplicationController
   end
 
   def about
-    # @hobbies = ["Dogs", "Video Gaming", "Music (Listening, Live & Performing)", "Puzzles"]
   end
 
   def contact
@@ -36,7 +35,6 @@ class PagesController < ApplicationController
     @bonus = ["Microsoft Office Suite", "Full Clean UK Driving Licence"]
     @bonus_left = @bonus[0]
     @bonus_right = @bonus[1]
-    # @strengths = ["Trustworthy & Reliable", "Empathetic & Approachable", "Fast Learner", "Dedicated", "Strong Listener", "Team Player", "Organisation"]
   end
 
   def projects

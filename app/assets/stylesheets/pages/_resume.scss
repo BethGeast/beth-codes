@@ -62,15 +62,6 @@
   }
 }
 
-// .resume-link:hover {
-//   background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
-//   background-size: 1000px 100%;
-//   -webkit-background-clip: text;
-//   background-clip: text;
-//   -webkit-text-fill-color: transparent;
-//   animation: shimmer 2s infinite linear;
-// }
-
 @keyframes shimmer {
   0% {
     background-position: -1000px 0;
