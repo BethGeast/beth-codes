@@ -18,6 +18,7 @@
     color: $white;
     background-color: $hot-pink;
     border: 1px solid $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -40,6 +41,16 @@
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+}
+
+.photo-credit {
+  font-size: 12px;
+  padding-top: 0 !important;
+
+  a {
+    text-decoration: none;
+    color: $even-darker-pink;
+  }
 }
 
 .card-left {
@@ -84,7 +95,7 @@
 
   img {
     border-radius: 3px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     max-height: 250px;
     width: auto;
@@ -133,7 +144,7 @@
 
   img {
     border-radius: 3px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     max-height: 250px;
     width: auto;
@@ -155,6 +166,10 @@
 
   .card-right-img {
     margin-right: 8px;
+  }
+
+  .photo-credit {
+    font-size: 10px;
   }
 }
 

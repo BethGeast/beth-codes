@@ -18,6 +18,7 @@
     color: $white;
     background-color: $hot-pink;
     border: 1px solid $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -101,13 +102,14 @@
   p {
     color: $darkest-pink;
   }
-}
 
-.contact-card:hover {
-  background-color: $darkest-pink;
-  color: $white;
+  &:hover {
+    background-color: $darkest-pink;
+    color: $white;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
 
-  i {
+  &:hover i {
     color: $white;
   }
 }
@@ -163,6 +165,7 @@
   .btn:hover {
     background-color: $white;
     color: $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   }
 }
 

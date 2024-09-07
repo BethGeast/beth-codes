@@ -18,6 +18,7 @@
     color: $white;
     background-color: $hot-pink;
     border: 1px solid $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
 }
 
@@ -50,16 +51,25 @@
   background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 2s infinite linear;
+
+  &:hover {
+    background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
+    background-size: 1000px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s infinite linear;
+  }
 }
 
-.resume-link :hover {
-  background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
-  background-size: 1000px 100%;
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 2s infinite linear;
-}
+// .resume-link:hover {
+//   background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
+//   background-size: 1000px 100%;
+//   -webkit-background-clip: text;
+//   background-clip: text;
+//   -webkit-text-fill-color: transparent;
+//   animation: shimmer 2s infinite linear;
+// }
 
 @keyframes shimmer {
   0% {

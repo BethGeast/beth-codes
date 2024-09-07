@@ -9,71 +9,71 @@
   margin-bottom: 75px;
 }
 
-.body-container .grouped-cards {
+.grouped-cards {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   flex-grow: 1;
+}
 
-  .wide-card {
-    flex-shrink: 1;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
+.wide-card {
+  flex-shrink: 1;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  margin: 0 auto;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
 
-  #intro-card {
-    color: $white;
-    text-align: center;
-    background: $darkest-pink;
-    // background: linear-gradient(to right, $darkest-pink 96%, $hot-pink 100%);
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
-    height: auto;
-    padding: 24px;
-    font-size: 20px;
-    border-radius: 3px;
-  }
+#intro-card {
+  color: $white;
+  text-align: center;
+  background: $darkest-pink;
+  // background: linear-gradient(to right, $darkest-pink 96%, $hot-pink 100%);
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 auto;
+  height: auto;
+  padding: 24px;
+  font-size: 20px;
+  border-radius: 3px;
+}
 
-  .card-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-  }
+.card-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
 
-  .button-card {
-    background-color: $darkest-pink;
-    border: 1px solid $even-darker-pink;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    color: $white;
-    text-align: center;
-    height: auto;
-    border-radius: 3px;
-    flex: 1 1 auto;
-    transition: 0.3s ease;
-  }
+.button-card {
+  background-color: $darkest-pink;
+  border: 1px solid $even-darker-pink;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  color: $white;
+  text-align: center;
+  height: auto;
+  border-radius: 3px;
+  flex: 1 1 auto;
+  transition: 0.3s ease;
 
-  .button-card:hover {
-    background-color: $white;
-    // color: $darkest-pink;
-    color: $hot-pink;
-    border: 1px solid $even-darker-pink;
-  }
-
-  .button-card p {
+  p {
     margin: 16px;
   }
 
-  .card-link {
-    text-decoration: none;
-    justify-content: space-between;
-    margin-top: 1.5rem;
+  &:hover {
+    background-color: $white;
+    color: $hot-pink;
+    border: 1px solid $even-darker-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   }
+}
+
+.card-link {
+  text-decoration: none;
+  justify-content: space-between;
+  margin-top: 1.5rem;
 }
 
 .homepage-title {
