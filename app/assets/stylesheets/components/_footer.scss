@@ -4,7 +4,6 @@
   background-color: $white;
   display: flex;
   bottom: 0;
-  // position: sticky;
   position: fixed;
   margin-top: auto;
   justify-content: center;
@@ -55,12 +54,12 @@
   .footer-icons i {
     color: $darkest-pink;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.3s ease;
     font-size: 1.5rem;
     padding: 0.25rem;
   }
 
   .footer-icons i:hover {
-    color: $soft-light-pink;
+    color: $hot-pink;
   }
 }
