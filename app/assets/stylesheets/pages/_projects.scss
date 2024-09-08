@@ -43,6 +43,15 @@
   }
 }
 
+.projects-page-container {
+  width: 100vw;
+  margin: 0 auto;
+  margin-top: 200px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
 @media (max-width: 576px) {
   .back-button-projects {
     margin-left: 24px;
@@ -59,6 +68,10 @@
 
   .page-title-projects h3 {
     font-size: 24px;
+  }
+
+  .projects-page-container {
+    margin-top: 175px;
   }
 }
 
@@ -78,6 +91,10 @@
 
   .page-title-projects h3 {
     font-size: 24px;
+  }
+
+  .projects-page-container {
+    margin-top: 150px;
   }
 }
 

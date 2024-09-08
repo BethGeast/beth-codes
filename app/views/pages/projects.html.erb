@@ -9,3 +9,145 @@
     <h3>Past Projects</h3>
   </div>
 </div>
+
+<div class="projects-page-container">
+  <h1>-- TODO: STYLING AND INSERT PHOTOS --</h1>
+  <div>
+    <h3>This site!</h3>
+    <p>This website is the most recent of my personal coding
+      projects. Built from the ground up as a totally solo
+      project, this has creatively been a lot of fun, as I've
+      had complete freedom over design choices and color palettes 😁
+      although solo working comes with its downsides - you don't
+      have that second set of eyes for any debugging!
+    </p>
+    <p>Creating a working contact form seemed like it would be
+      such a straightforwards task, but coding this for the first
+      time (there's always a first time for everything, right?)
+      was probably the trickiest part of this project. But that
+      work paid off, and it makes me very satisfied to see it now
+      working in both development and production environments!
+      Why don't you try it out yourself by clicking on "message me"
+      on my contact page...?
+    </p>
+    <h5>Technical Features</h5>
+    <ul>
+      <li>Ruby On Rails</li>
+      <li>Embedded Ruby, HTML, JavaScript Stimulus and SCSS</li>
+      <li>Rails ActionMailer for the working contact form</li>
+      <li>Production hosting using Heroku</li>
+      <li>Responsive design across a variety of devices</li>
+      <li>SSL Certificate for encryption and security</li>
+    </ul>
+    <p>Check out the <%= link_to "source code", "https://github.com/BethGeast/beth-codes", target: "_blank" %></p>
+  </div>
+
+  <div>
+    <h3>GigBuddy</h3>
+    <p>A mobile app for users to find others with whom
+      they share a music taste, allowing new friendships
+      to be made and with the idea for users to find friends
+      to attend music concerts with.
+    </p>
+    <p>This was my final project during the Le Wagon bootcamp
+      I completed earlier this year. I was the lead developer for
+      this project, in a group with two other students, after
+      initially pitching the rough idea around half-way through
+      the course. In under ten days, we went from fully realising
+      what the features of the app would be, forming all user
+      stories and wireframing to presenting the working product,
+      in production, to a live audience.
+    </p>
+    <p>You can check out the live demo of this <%= link_to "on youtube", "https://www.youtube.com/watch?v=qJBE-69A08c", target: "_blank" %></p>
+    <h5>Technical Features</h5>
+    <ul>
+      <li>Ruby On Rails Framework</li>
+      <li>Embedded Ruby, HTML, SCSS, JavaScript key languages used</li>
+      <li>Spotify API integrated to allow users to search and add their
+        favorite artists to their profiles (part of the key algorithm
+        to find potential matches with other users on the site). Also
+        links each artists artwork as per their spotify profiles
+      </li>
+      <li>Devise Ruby Gem for secure user sign in/sign up</li>
+      <li>Pundit Ruby Gem to ensure users can only edit their own
+        profiles, and not any one else's
+      </li>
+      <li>ActiveStorage and Cloudinary for users to upload photos
+        to their profiles
+      </li>
+      <li>ActiveRecord schema with PostgreSQL production database</li>
+      <li>Redis, Web Socket and ActionCable for live chat feature</li>
+      <li>Heroku for production hosting</li>
+      <li>SSL Certificate for encryption and security</li>
+    </ul>
+    <%= link_to "Check out all the app's features", "https://github.com/BethGeast/gig-buddy/blob/master/README.md", target: "_blank" %>
+    <p>Check out the <%= link_to "source code", "https://github.com/BethGeast/gig-buddy", target: "_blank" %></p>
+    <p>-- Insert screenshots of the app and features --</p>
+  </div>
+
+  <div>
+    <h3>Dogbnb</h3>
+    <p>A website for dog owners to find kennels/accommodation
+      for their pet to stay in whilst they are away.
+    </p>
+    <p>Prior to our final projects, we were tasked with
+      creating a clone Airbnb website as a mock project.
+      In less than five days, myself (again as lead developer)
+      and my two teammates went from deciding on our own
+      approach to the 'Airbnb' style site, through user stories
+      and wireframing, to presenting the completed site on
+      the afternoon of the fifth day. This challenge was my
+      introduction to working on a full project and as a team,
+      handling task delegation, different branches and the conflicts
+      which would inevitably appear. We were very ambitious as
+      a team, and although had hoped to add a few more features,
+      I am proud of what we achieved as a first teamworking
+      project, and in less than five days start to finish!
+    </p>
+    <h5>Technical Features</h5>
+    <ul>
+      <li>Ruby On Rails</li>
+      <li>Embedded Ruby, HTML, SCSS, JavaScript</li>
+      <li>ActiveRecord schema with PostgreSQL production database</li>
+      <li>ActiveStorage and Cloudinary for photo upload and attachment</li>
+      <li>Simpleform and bootstrap with further SCSS styling to tweak to design</li>
+      <li>Devise Ruby Gem for secure user sign-up/sign-in</li>
+      <li>Heroku for production hosting</li>
+      <li>Photo carousel for each item listing, both on index and show pages</li>
+      <li>Modal overlay on individual item listing page when item clicked on,
+        so that user can better view all attached images
+      </li>
+      <li>JavaScript date picker and math calculation to quote total price for user when placing booking</li>
+      <li>Functional search bar feature to improve user experience</li>
+    </ul>
+    <p>Have a read of the <%= link_to "key user stories of the application", "https://github.com/BethGeast/DogBnB/blob/master/README.md", target: "_blank" %></p>
+    <p>Check out the <%= link_to "source code of this project", "https://github.com/BethGeast/DogBnB", target: "_blank" %></p>
+    <p>-- Insert screenshots of site and features --</p>
+  </div>
+
+  <div>
+    <h3>LocalMarket</h3>
+    <p>After completion of my web development course, I was approached and asked if
+      I wanted to be involved in a new project a friend had an idea for - an online
+      marketplace for users to find local farmers/producers of homegrown food
+      products (e.g. milk, eggs, fruits, vegetables etc.), or for these farmers
+      to list their produce online for others to find and buy. My role in this
+      project was assisting with the creation and set-up of the back-end side of
+      the application.
+    </p>
+    <h5>Technical Features I was involved in:</h5>
+    <ul>
+      <li>Creating the ActiveRecord database/schema with associations, all models (and required
+        validations for each), controllers and view pages, along with their matching routes,
+        and ActiveStorage and Cloudinary for image upload
+      </li>
+      <li>Installing and implementing Devise and Pundit Ruby Gems, to handle secure user
+        sign-in/sign-up, authentication and authorization
+      </li>
+      <li>Creating a live-chat feature between sellers and buyers, using
+        Web Socket, ActionCable and JavaScript
+      </li>
+    </ul>
+    <p>View the <%= link_to "source code", "https://github.com/Joshjok86/localmarket", target: "_blank" %></p>
+  </div>
+</div>
