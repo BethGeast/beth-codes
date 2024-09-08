@@ -1,8 +1,13 @@
 <%# pages#contact %>
-<div class="back-button-contact">
-  <%= link_to :back do %>
-    <i class="fa-solid fa-circle-arrow-left"></i>
-  <% end %>
+<div class="page-banner-contact">
+  <div class="back-button-contact">
+    <%= link_to :back do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="page-title-contact">
+    <h3>Contact Me</h3>
+  </div>
 </div>
 <div class="contact-page-container">
   <div class="contact-elements-container col-10">
@@ -11,22 +16,18 @@
     </span>
     <div class="contact-card-container col-10">
       <div class="row social-media-links col-10">
-
         <%= link_to "https://github.com/BethGeast", target: "_blank", class: "contact-card col-10 col-md-5" do %>
           <i class="fa-brands fa-square-github"></i>
           GitHub
         <% end %>
-
         <%= link_to "https://www.linkedin.com/in/bethgeast/", target: "_blank", class: "contact-card col-10 col-md-5" do %>
           <i class="fa-brands fa-linkedin"></i>
           LinkedIn
         <% end %>
-
         <%= link_to "mailto:beth.codes1@gmail.com", target: "_blank", class: "contact-card col-10 col-md-5" do %>
           <i class="fa-solid fa-at"></i>
           Email
         <% end %>
-
         <a href="#"
           class="contact-card col-10 col-md-5"
           data-controller="contact"
@@ -37,7 +38,6 @@
       </div>
     </div>
   </div>
-
   <div id="contact-form" class="container col-10 col-md-8" style="display: none;">
     <%= simple_form_for :contact, url: send_contact_email_path, data: { turbo_frame: "_top" } do |f| %>
       <div class="form-group">
