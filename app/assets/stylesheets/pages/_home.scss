@@ -28,9 +28,11 @@
 }
 
 #intro-card {
-  color: $white;
+  // color: $white;
+  color: $darkest-pink;
+  background-color: $white;
   text-align: center;
-  background: $darkest-pink;
+  // background: $darkest-pink;
   // background: linear-gradient(to right, $darkest-pink 96%, $hot-pink 100%);
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
   flex: 1 1 auto;
@@ -50,8 +52,9 @@
 .button-card {
   background-color: $darkest-pink;
   border: 1px solid $even-darker-pink;
-  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   color: $white;
+  font-weight: 450;
   text-align: center;
   height: auto;
   border-radius: 3px;

@@ -1,8 +1,17 @@
 // about page styling
+.page-banner-about {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 75px;
+  margin-top: 25px;
+  align-items: center;
+  width: 100vw;
+  font-size: 32px;
+}
+
 .back-button-about {
   font-size: 32px;
-  position: absolute;
-  top: 100px;
   margin-left: 36px;
 
   i {
@@ -22,6 +31,18 @@
   }
 }
 
+.page-title-about {
+  text-align: right;
+  color: $darkest-pink;
+  margin-right: 36px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 0;
+  }
+}
+
 .page-container {
  margin: 0 auto;
  width: 100vw;
@@ -36,7 +57,7 @@
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
-  margin-top: 150px;
+  margin-top: 175px;
   margin-bottom: 100px;
   flex-direction: column;
   align-items: center;
@@ -175,7 +196,7 @@
 
 @media (max-width: 576px) {
   .about-card-container {
-    margin-top: 100px;
+    margin-top: 125px;
     margin-bottom: 75px;
     align-items: center;
   }
@@ -224,15 +245,39 @@
   }
 
   .back-button-about {
-    top: 85px !important;
-    margin-left: 24px !important;
+    margin-left: 24px;
+  }
+
+  .page-banner-about {
+    top: 75px;
+    margin-top: 16px;
+  }
+
+  .page-title-about {
+    margin-right: 24px;
+  }
+
+  .page-title-about h3 {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 450px) {
   .back-button-about {
-    top: 70px !important;
-    margin-left: 20px !important;
+    margin-left: 20px;
+  }
+
+  .page-banner-about {
+    top: 60px;
+    margin-top: 16px;
+  }
+
+  .page-title-about {
+    margin-right: 20px;
+  }
+
+  .page-title-about h3 {
+    font-size: 24px;
   }
 }
 
@@ -242,7 +287,19 @@
   }
 
   .back-button-about {
-    top: 60px !important;
-    margin-left: 20px !important;
+    margin-left: 20px;
+  }
+
+  .page-banner-about {
+    top: 50px;
+    margin-top: 8px;
+  }
+
+  .page-title-about {
+    margin-right: 20px;
+  }
+
+  .page-title-projects h3 {
+    font-size: 20px;
   }
 }
