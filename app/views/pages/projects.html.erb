@@ -9,10 +9,8 @@
     <h3>Past Projects</h3>
   </div>
 </div>
-
 <div class="projects-page-container">
-  <h1>-- TODO: STYLING AND INSERT PHOTOS --</h1>
-  <div>
+  <div class="projects-card">
     <h3>This site!</h3>
     <p>This website is the most recent of my personal coding
       projects. Built from the ground up as a totally solo
@@ -30,7 +28,7 @@
       Why don't you try it out yourself by clicking on "message me"
       on my contact page...?
     </p>
-    <h5>Technical Features</h5>
+    <h5>Technical Features:</h5>
     <ul>
       <li>Ruby On Rails</li>
       <li>Embedded Ruby, HTML, JavaScript Stimulus and SCSS</li>
@@ -39,10 +37,14 @@
       <li>Responsive design across a variety of devices</li>
       <li>SSL Certificate for encryption and security</li>
     </ul>
-    <p>Check out the <%= link_to "source code", "https://github.com/BethGeast/beth-codes", target: "_blank" %></p>
-  </div>
+    <div class="link-right">
+      <%= link_to "https://github.com/BethGeast/beth-codes", target: "_blank", class: "source-link-extended" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
 
-  <div>
+      <% end %>
+    </div>
+  </div>
+  <div class="projects-card">
     <h3>GigBuddy</h3>
     <p>A mobile app for users to find others with whom
       they share a music taste, allowing new friendships
@@ -58,15 +60,20 @@
       stories and wireframing to presenting the working product,
       in production, to a live audience.
     </p>
-    <p>You can check out the live demo of this <%= link_to "on youtube", "https://www.youtube.com/watch?v=qJBE-69A08c", target: "_blank" %></p>
-    <h5>Technical Features</h5>
+    <div class="link-right-extended">
+      <%= link_to "https://www.youtube.com/watch?v=qJBE-69A08c", target: "_blank", class: "source-link-extended" do %>
+        You can check out the recorded live demo of this on YouTube <i class="fa-brands fa-youtube"></i>
+        <%# <i class="fa-brands fa-youtube"></i> %>
+      <% end %>
+    </div>
+    <h5>Technical Features:</h5>
     <ul>
       <li>Ruby On Rails Framework</li>
-      <li>Embedded Ruby, HTML, SCSS, JavaScript key languages used</li>
+      <li>Embedded Ruby, HTML, SCSS and JavaScript</li>
       <li>Spotify API integrated to allow users to search and add their
         favorite artists to their profiles (part of the key algorithm
         to find potential matches with other users on the site). Also
-        links each artists artwork as per their spotify profiles
+        links each artist's artwork as per their spotify profiles
       </li>
       <li>Devise Ruby Gem for secure user sign in/sign up</li>
       <li>Pundit Ruby Gem to ensure users can only edit their own
@@ -75,17 +82,24 @@
       <li>ActiveStorage and Cloudinary for users to upload photos
         to their profiles
       </li>
-      <li>ActiveRecord schema with PostgreSQL production database</li>
+      <li>ActiveRecord/PostgreSQL database</li>
       <li>Redis, Web Socket and ActionCable for live chat feature</li>
       <li>Heroku for production hosting</li>
       <li>SSL Certificate for encryption and security</li>
     </ul>
-    <%= link_to "Check out all the app's features", "https://github.com/BethGeast/gig-buddy/blob/master/README.md", target: "_blank" %>
-    <p>Check out the <%= link_to "source code", "https://github.com/BethGeast/gig-buddy", target: "_blank" %></p>
-    <p>-- Insert screenshots of the app and features --</p>
-  </div>
+    <div class="link-double">
+      <%= link_to "https://github.com/BethGeast/gig-buddy/blob/master/README.md", target: "_blank", class: "source-link-reverse" do %>
+        <i class="fa-solid fa-file-code"></i> Read more about the app's features
+      <% end %>
+      <%= link_to "https://github.com/BethGeast/gig-buddy", target: "_blank", class: "source-link" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
 
-  <div>
+      <% end %>
+    </div>
+    <br>
+    <p><strong>-- Insert photo carousel of the app and features --</strong></p>
+  </div>
+  <div class="projects-card">
     <h3>Dogbnb</h3>
     <p>A website for dog owners to find kennels/accommodation
       for their pet to stay in whilst they are away.
@@ -104,11 +118,11 @@
       I am proud of what we achieved as a first teamworking
       project, and in less than five days start to finish!
     </p>
-    <h5>Technical Features</h5>
+    <h5>Technical Features:</h5>
     <ul>
       <li>Ruby On Rails</li>
       <li>Embedded Ruby, HTML, SCSS, JavaScript</li>
-      <li>ActiveRecord schema with PostgreSQL production database</li>
+      <li>ActiveRecord/PostgreSQL database</li>
       <li>ActiveStorage and Cloudinary for photo upload and attachment</li>
       <li>Simpleform and bootstrap with further SCSS styling to tweak to design</li>
       <li>Devise Ruby Gem for secure user sign-up/sign-in</li>
@@ -120,12 +134,20 @@
       <li>JavaScript date picker and math calculation to quote total price for user when placing booking</li>
       <li>Functional search bar feature to improve user experience</li>
     </ul>
-    <p>Have a read of the <%= link_to "key user stories of the application", "https://github.com/BethGeast/DogBnB/blob/master/README.md", target: "_blank" %></p>
-    <p>Check out the <%= link_to "source code of this project", "https://github.com/BethGeast/DogBnB", target: "_blank" %></p>
-    <p>-- Insert screenshots of site and features --</p>
-  </div>
+    <div class="link-double">
+      <%= link_to "https://github.com/BethGeast/DogBnB/blob/master/README.md", target: "_blank", class: "source-link-reverse" do %>
+        <i class="fa-solid fa-file-code"></i> Read more about the app's features
 
-  <div>
+      <% end %>
+      <%= link_to "https://github.com/BethGeast/DogBnB", target: "_blank", class: "source-link" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+
+      <% end %>
+    </div>
+    <br>
+    <p><strong>-- Insert photo carousel of site and features --</strong></p>
+  </div>
+  <div class="projects-card">
     <h3>LocalMarket</h3>
     <p>After completion of my web development course, I was approached and asked if
       I wanted to be involved in a new project a friend had an idea for - an online
@@ -148,6 +170,11 @@
         Web Socket, ActionCable and JavaScript
       </li>
     </ul>
-    <p>View the <%= link_to "source code", "https://github.com/Joshjok86/localmarket", target: "_blank" %></p>
+    <div class="link-right">
+      <%= link_to "https://github.com/Joshjok86/localmarket", target: "_blank", class: "source-link-extended" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+
+      <% end %>
+    </div>
   </div>
 </div>
