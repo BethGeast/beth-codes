@@ -179,6 +179,13 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.carousel-container:hover img {
+  transform: scale(1.05);
 }
 
 .carousel-item img {
@@ -186,12 +193,42 @@
   width: auto;
   object-fit: contain;
   background-color: black;
-  cursor: pointer;
-  transition: transform 0.3s ease;
+  // cursor: pointer;
+  // transition: transform 0.3s ease;
 
-  &:hover {
-    transform: scale(1.05);
-  }
+  // &:hover {
+  //   transform: scale(1.05);
+  // }
+}
+
+// .modal-body .carousel-item img:hover {
+//   transform: none;
+// }
+
+// .carousel-item:hover img {
+//   transform: scale(1.05);
+//   transition: transform 0.3s ease;
+// }
+
+.modal-body .carousel-item:hover img {
+  transform: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  z-index: 1001;
+  pointer-events: auto;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right:10px;
 }
 
 .modal {

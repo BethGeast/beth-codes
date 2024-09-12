@@ -1,5 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
-import { Modal } from "bootstrap"
+// import { Modal } from "bootstrap"
 
 // Connects to data-controller="carousel"
 export default class extends Controller {
