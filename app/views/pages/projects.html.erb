@@ -94,47 +94,45 @@
       <% end %>
     </div>
     <br>
-    <p><strong>-- Insert photo carousel of the app and features --</strong></p>
-    <br>
 
-    <div class="carousel-container" data-controller="carousel" data-bs-toggle="modal" data-bs-target="#gigbuddyModal">
+    <div class="carousel-container" data-controller="carousel">
       <div id="gigbuddyCarousel" class="carousel slide" data-bs-ride="false">
-        <div class="carousel-inner">
+        <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#gigbuddyModal">
           <div class="carousel-item active" data-carousel-target="image">
-            <img src="<%= asset_path('gb_landing_page.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_landing_page.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_view_my_profile.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_view_my_profile.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_edit_profile.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_edit_profile.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_search_artists.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_search_artists.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_artist_search_results.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_artist_search_results.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_success_alert.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_success_alert.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_swiper.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_swiper.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_new_match.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_new_match.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_view_matches.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_view_matches.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_chatroom.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_chatroom.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_view_a_match.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_view_a_match.png') %>" class="d-block w-100" alt="TODO">
           </div>
           <div class="carousel-item" data-carousel-target="image">
-            <img src="<%= asset_path('gb_delete_match_confirm.png') %>" class="d-block w-100 img-thumbnail" alt="TODO">
+            <img src="<%= asset_path('gb_delete_match_confirm.png') %>" class="d-block w-100" alt="TODO">
           </div>
         </div>
 
@@ -148,112 +146,109 @@
         <span class="visually-hidden">Next</span>
       </button>
 
-    </div>
-
-
-
-    <div class="modal fade" id="gigbuddyModal" tabindex="-1" aria-labelledby="gigbuddyModalLabel" aria-hidden="true" data-controller="carousel">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-          </div>
-          <div class="modal-body">
-            <div id="gigbuddyModalCarousel" class="carousel slide" data-bs-ride="false" data-carousel-target="modalCarousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_landing_page') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
+      <div class="modal fade" id="gigbuddyModal" tabindex="-1" aria-labelledby="gigbuddyModalLabel" aria-hidden="true" data-carousel-target="modal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="gigbuddyModalCarousel" class="carousel slide" data-bs-ride="false" data-carousel-target="modalCarousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_landing_page') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_view_my_profile.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_edit_profile.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_search_artists.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_artist_search_results.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_success_alert.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_swiper.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_new_match.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_view_matches.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_chatroom.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_view_a_match.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('gb_delete_match_confirm.png') %>" class="d-block w-100" alt="TODO">
+                    <div class="carousel-caption custom-caption">
+                      <h5>img title</h5>
+                      <p>img description</p>
+                    </div>
                   </div>
                 </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_view_my_profile.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_edit_profile.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_search_artists.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_artist_search_results.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_success_alert.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_swiper.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_new_match.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_view_matches.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_chatroom.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_view_a_match.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
-                <div class="carousel-item" data-carousel-target="modalItem">
-                  <img src="<%= asset_path('gb_delete_match_confirm.png') %>" class="d-block w-100" alt="TODO">
-                  <div class="carousel-caption custom-caption">
-                    <h5>img title</h5>
-                    <p>img description</p>
-                  </div>
-                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hiddem="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
           </div>
         </div>

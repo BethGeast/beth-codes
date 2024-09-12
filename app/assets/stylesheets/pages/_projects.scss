@@ -172,20 +172,45 @@
 .carousel-container {
   width: 100%;
   max-width: 600px;
-  // height: 400px;
   margin: 20px auto;
   background-color: black;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  // cursor: pointer;
   position: relative;
-  transition: transform 0.3s ease;
+  // transition: transform 0.3s ease;
 }
 
-.carousel-container:hover img {
+// .carousel-container:hover img {
+//   transform: scale(1.05);
+// }
+
+#gigbuddyCarousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#gigbuddyModalCarousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 90%;
+  // height: 100%;
+}
+
+.carousel-inner:hover img {
   transform: scale(1.05);
+  // border: none;
 }
 
 .carousel-item img {
@@ -193,22 +218,7 @@
   width: auto;
   object-fit: contain;
   background-color: black;
-  // cursor: pointer;
-  // transition: transform 0.3s ease;
-
-  // &:hover {
-  //   transform: scale(1.05);
-  // }
 }
-
-// .modal-body .carousel-item img:hover {
-//   transform: none;
-// }
-
-// .carousel-item:hover img {
-//   transform: scale(1.05);
-//   transition: transform 0.3s ease;
-// }
 
 .modal-body .carousel-item:hover img {
   transform: none;
@@ -233,15 +243,9 @@
 
 .modal {
   z-index: 10000;
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
 }
 
 .modal-body {
-  // display: flex;
-  // align-items: center;
-  // justify-content: center;
   background-color: black;
 
   img {
@@ -258,8 +262,6 @@
   left: 10px;
   text-align: left;
   padding: 10px;
-  // border-radius: 5px;
-  // background-color: rgba(0, 0, 0, 0.5);
 }
 
 .carousel-caption h5 {
