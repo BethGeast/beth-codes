@@ -1,5 +1,4 @@
 import { Controller } from "@hotwired/stimulus"
-// import { Modal } from "bootstrap"
 
 // Connects to data-controller="carousel"
 export default class extends Controller {
@@ -7,7 +6,8 @@ export default class extends Controller {
 
   connect() {
     this.initializeCarousel();
-    this.syncCarousels();
+    this.syncCarouselsGigbuddy();
+    this.syncCarouselsDogbnb();
   }
 
   initializeCarousel() {
@@ -23,7 +23,7 @@ export default class extends Controller {
     modalCarousel.to(index);
   }
 
-  syncCarousels() {
+  syncCarouselsGigbuddy() {
     this.modalTarget.addEventListener("hidden.bs.modal", () => {
       this.cleanupModal();
       const activeIndex = Array.from(this.modalItemTargets).findIndex((item) =>
@@ -36,6 +36,24 @@ export default class extends Controller {
     this.modalCarouselTarget.addEventListener("slide.bs.carousel", event => {
       const mainCarousel = new bootstrap.Carousel(
         document.getElementById("gigbuddyCarousel")
+      );
+      mainCarousel.to(event.to);
+    });
+  }
+
+  syncCarouselsDogbnb() {
+    this.modalTarget.addEventListener("hidden.bs.modal", () => {
+      this.cleanupModal();
+      const activeIndex = Array.from(this.modalItemTargets).findIndex((item) =>
+        item.classList.contains("active")
+      );
+      const mainCarousel = new bootstrap.Carousel(document.getElementById("dogbnbCarousel")
+      );
+      mainCarousel.to(activeIndex);
+    });
+    this.modalCarouselTarget.addEventListener("slide.bs.carousel", event => {
+      const mainCarousel = new bootstrap.Carousel(
+        document.getElementById("dogbnbCarousel")
       );
       mainCarousel.to(event.to);
     });

@@ -94,7 +94,6 @@
       <% end %>
     </div>
     <br>
-
     <div class="carousel-container" data-controller="carousel">
       <div id="gigbuddyCarousel" class="carousel slide" data-bs-ride="false">
         <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#gigbuddyModal">
@@ -135,7 +134,6 @@
             <img src="<%= asset_path('gb_delete_match_confirm.png') %>" class="d-block w-100" alt="Screenshot of GigBuddy confirm to remove a match">
           </div>
         </div>
-
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#gigbuddyCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -145,7 +143,6 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
-
       <div class="modal fade" id="gigbuddyModal" tabindex="-1" aria-labelledby="gigbuddyModalLabel" aria-hidden="true" data-carousel-target="modal">
         <div class="modal-dialog modal-xl">
           <div class="modal-content">
@@ -254,7 +251,6 @@
         </div>
       </div>
     </div>
-
   </div>
   <div class="projects-card">
     <h3>Dogbnb</h3>
@@ -300,7 +296,143 @@
       <% end %>
     </div>
     <br>
-    <p><strong>-- Insert photo carousel of site and features --</strong></p>
+    <div class="carousel-container" data-controller="carousel">
+      <div id="dogbnbCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#dogbnbModal">
+          <div class="carousel-item active" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_landing_page.png') %>" class="d-block w-100" alt="Screenshot of dogbnb landing page">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_login.png') %>" class="d-block w-100" alt="Screenshot of dogbnb login">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_search_bar.png') %>" class="d-block w-100" alt="Screenshot of dogbnb search bar">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_item_show.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing show page">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_reviews.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing's reviews">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_item_reserve.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing - place reservation">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_user_dropdown.png') %>" class="d-block w-100" alt="Screenshot of dogbnb user dropdown">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_view_bookings.png') %>" class="d-block w-100" alt="Screenshot of dogbnb view all your bookings">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_favorites_index.png') %>" class="d-block w-100" alt="Screenshot of dogbnb view all your favorites">
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <img src="<%= asset_path('dogbnb_list_new_item.png') %>" class="d-block w-100" alt="Screenshot of dogbnb create a new listing">
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#dogbnbCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#dogbnbCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal fade" id="dogbnbModal" tabindex="-1" aria-labelledby="dogbnbModalLabel" aria-hidden="true" data-carousel-target="modal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="dogbnbModalCarousel" class="carousel slide" data-bs-ride="false" data-carousel-target="modalCarousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_landing_page.png') %>" class="d-block w-100" alt="Screenshot of dogbnb landing page">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Landing Page</h5>
+                      <p>The view when a user first lands on the site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_login.png') %>" class="d-block w-100" alt="Screenshot of dogbnb login">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Login</h5>
+                      <p>Sign in or create an account for site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_search_bar.png') %>" class="d-block w-100" alt="Screenshot of dogbnb search bar">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Filter Options</h5>
+                      <p>Search for listing matching your requirements</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_item_show.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing show page">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View a Listing</h5>
+                      <p>View more information about a listing</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_reviews.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing's reviews">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View Reviews</h5>
+                      <p>Read through or leave a review for a listing</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_item_reserve.png') %>" class="d-block w-100" alt="Screenshot of dogbnb listing - place reservation">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Make a Booking</h5>
+                      <p>Enter details and make a reservation</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_user_dropdown.png') %>" class="d-block w-100" alt="Screenshot of dogbnb user dropdown">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Dropdown Options</h5>
+                      <p>Navigate the site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_view_bookings.png') %>" class="d-block w-100" alt="Screenshot of dogbnb view all your bookings">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View All Bookings</h5>
+                      <p>View all your placed bookings for reference</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_favorites_index.png') %>" class="d-block w-100" alt="Screenshot of dogbnb view all your favorites">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View Favorites</h5>
+                      <p>Revisit listings you've favorited</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <img src="<%= asset_path('dogbnb_list_new_item.png') %>" class="d-block w-100" alt="Screenshot of dogbnb create a new listing">
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Create a Listing</h5>
+                      <p>Create a new listing for your own place for others to book!</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dogbnbModalCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dogbnbModalCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="projects-card">
     <h3>LocalMarket</h3>
