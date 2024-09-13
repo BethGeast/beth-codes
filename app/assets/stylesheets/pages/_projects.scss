@@ -93,7 +93,6 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  // color: $darkest-pink;
 }
 
 .link-right-extended {
@@ -103,9 +102,6 @@
 }
 
 .source-link {
-  // display: flex;
-  // align-items: center;
-  // gap: 8px;
   color: $darkest-pink;
   transition: 0.3s ease;
   text-decoration: none;
@@ -169,6 +165,119 @@
   }
 }
 
+.carousel-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: rgb(15, 15, 15);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#gigbuddyCarousel, #gigbuddyModalCarousel, #dogbnbCarousel, #dogbnbModalCarousel {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-inner {
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  width: 90%;
+}
+
+.carousel-inner:hover img {
+  transform: scale(1.05);
+}
+
+.carousel-item img {
+  height: 400px;
+  width: auto;
+  object-fit: contain;
+  background-color: rgb(15, 15, 15);
+}
+
+.modal-body .carousel-item:hover img {
+  transform: none;
+}
+
+.carousel-control-prev, .carousel-control-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: auto;
+  z-index: 1001;
+  pointer-events: auto;
+}
+
+.carousel-control-prev {
+  left: 10px;
+}
+
+.carousel-control-next {
+  right: 10px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  color: $white;
+}
+
+.modal {
+  z-index: 10000;
+}
+
+.modal-body {
+  background-color: rgb(15, 15, 15);
+
+  img {
+    max-width: 100%;
+    height: 80vh;
+    object-fit: contain;
+    background-color: rgb(15, 15, 15);
+  }
+}
+
+.carousel-caption.custom-caption {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-align: left;
+  padding: 10px;
+}
+
+.carousel-caption.custom-caption-dogbnb {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  padding: 0;
+}
+
+.carousel-caption h5 {
+  margin: 0;
+  font-size: 18px;
+  color: $hot-pink;
+}
+
+.carousel-caption p {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: $white;
+}
+
+.modal-header {
+  background: $darkest-pink;
+  background: -webkit-linear-gradient(90deg, $darkest-pink 0%, $hot-pink 25%, $barbie-pink 50%, $button-pink 75%, $white 100%);
+  background: linear-gradient(90deg, $darkest-pink 0%, $hot-pink 25%, $barbie-pink 50%, $button-pink 75%, $white 100%);
+  border-bottom: none;
+}
+
 @media (max-width: 1000px) {
   .source-link {
     text-align: center;
@@ -177,10 +286,6 @@
   .source-link-reverse {
     text-align: center;
   }
-
-  // .link-right-extended {
-  //   justify-content: center;
-  // }
 }
 
 @media (max-width: 800px) {
@@ -288,19 +393,4 @@
   .page-title-projects h3 {
     font-size: 20px;
   }
-
-  // .projects-card {
-  //   padding-top: 1rem;
-  //   padding-bottom: 1rem;
-  //   padding-left: 1.5rem;
-  //   padding-right: 1.5rem;
-
-  //   ul {
-  //     padding-left: 1rem;
-  //   }
-  // }
-
-  // .source-link {
-  //   font-size: 12px;
-  // }
 }
