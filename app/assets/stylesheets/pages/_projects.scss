@@ -186,6 +186,10 @@
   align-items: center;
 }
 
+#gigbuddyCarousel {
+  padding: 1rem;
+}
+
 .carousel-inner {
   cursor: pointer;
   transition: transform 0.3s ease;
@@ -217,11 +221,11 @@
 }
 
 .carousel-control-prev {
-  left: 10px;
+  left: 0;
 }
 
 .carousel-control-next {
-  right: 10px;
+  right: 0;
 }
 
 .carousel-control-prev-icon, .carousel-control-next-icon {

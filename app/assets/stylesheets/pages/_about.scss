@@ -45,6 +45,8 @@
 
 .page-container {
  margin: 0 auto;
+ margin-top: 25px;
+ margin-bottom: 100px;
  width: 100vw;
  min-height: 100vh;
  display: flex;
@@ -58,7 +60,6 @@
   margin: 0 auto;
   display: flex;
   margin-top: 175px;
-  margin-bottom: 100px;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
@@ -373,6 +374,10 @@
 
   .page-title-about h3 {
     font-size: 24px;
+  }
+
+  .page-container {
+    margin-bottom: 50px;
   }
 }
 
