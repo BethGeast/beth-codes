@@ -45,7 +45,7 @@
 
 .contact-page-container {
   width: 100vw;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
 .contact-elements-container {
@@ -137,7 +137,7 @@
 
 #contact-form {
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   margin-top: 50px;
   justify-content: center;
   align-items: center;
@@ -211,10 +211,9 @@
 
 @media (max-width: 800px) {
   .contact-page-container {
-    margin-bottom: 100px;
+    margin-bottom: 50px;
   }
 }
-
 
 @media (max-width: 576px) {
   .contact-elements-container {

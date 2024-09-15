@@ -46,7 +46,7 @@
 .page-container {
  margin: 0 auto;
  margin-top: 25px;
- margin-bottom: 100px;
+ margin-bottom: 50px;
  width: 100vw;
  min-height: 100vh;
  display: flex;
@@ -286,7 +286,6 @@
 @media (max-width: 768px) {
   .about-card-container {
     margin-top: 125px;
-    margin-bottom: 75px;
     align-items: center;
   }
 
