@@ -1,36 +1,39 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>We're sorry, but something went wrong (500)</title>
+    <title>Sorry, but something went wrong! (500)</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <style>
-      .internal-server-error-page {
+      .error-page-500 {
         background-color: #ffeff1;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
+        height: 100vh;
       }
 
       .error-message-500 {
         font-family: 'Trebuchet MS', sans-serif;
         max-width: 75%;
-        margin: 0 0 auto;
         color: #810947;
+        background-color: #ffffff;
+        border-radius: 3px;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+        padding: 1rem;
+        padding-bottom: 3rem;
       }
 
-      .title-500 {
+      .error-title-500 {
         padding: 2rem;
       }
-
     </style>
   </head>
-
-  <body class="internal-server-error-page">
+  <body class="error-page-500">
     <div class="error-message-500">
-      <div class="title-500">
+      <div class="error-title-500">
         <h1>Uh oh!</h1>
-        <h3>It looks like something went wrong with the server ☹</h3>
+        <h3>It looks like something went wrong with the server :(</h3>
         <h5>~ 500 Internal Server Error ~</h5>
       </div>
       <p>If refreshing the page doesn't work, have another try later!</p>
