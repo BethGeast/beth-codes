@@ -1,19 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>BethCodes</title>
+    <title><%= meta_title %></title>
+    <meta name="description" content="<%= meta_description %>">
+    <meta property="og:title" content="<%= meta_title %>">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="<%= request.original_url %>">
+    <meta property="og:image" content="<%= meta_image %>">
+    <meta property="og:description" content="<%= meta_description %>">
+    <meta property="og:site_name" content="<%= meta_title %>">
+    <meta name="author" content="BethCodes">
+    <meta name="keywords" content="web developer, portfolio, projects, about, contact, resume, web development, Ruby on Rails, software development, software engineer, freelance, freelancer, fullstack developer, fullstack web developer, fullstack web development, BethCodes">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="robots" content="index, follow">
+    <meta name="google-site-verification" content="<%= ENV["GOOGLE_SEARCH_CONSOLE_TOKEN"] %>">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
-
+    <link rel="canonical" href="<%= request.original_url %>">
     <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
     <%= javascript_importmap_tags %>
     <%= favicon_link_tag 'favicon.ico' %>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="<%= asset_path 'manifest.json' %>">
+    <%= render 'shared/ios_pwa_links' %>
+    <%= render partial: 'shared/structured_data', formats: [:json] %>
   </head>
 
   <body>
-    <%= render "shared/navbar" %>
-    <%= yield %>
+    <div class="content-wrapper">
+      <%= render "shared/navbar" %>
+      <%= yield %>
+    </div>
     <%= render "shared/footer" %>
   </body>
 </html>

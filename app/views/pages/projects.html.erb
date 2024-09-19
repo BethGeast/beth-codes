@@ -1,2 +1,469 @@
-<h1>Projects</h1>
-<h3>pages#projects</h3>
+<%# pages#projects %>
+<div class="page-banner-projects">
+  <div class="back-button-projects">
+    <%= link_to :back do %>
+      <i class="fa-solid fa-circle-arrow-left"></i>
+    <% end %>
+  </div>
+  <div class="page-title-projects">
+    <h3>Past Projects</h3>
+  </div>
+</div>
+<div class="projects-page-container">
+  <div class="projects-card">
+    <h3>This site!</h3>
+    <p>This website is the most recent of my personal coding
+      projects. Built from the ground up as a totally solo
+      project, this has creatively been a lot of fun, as I've
+      had complete freedom over design choices and color palettes 😁
+      although solo working comes with its downsides - you don't
+      have that second set of eyes for any debugging!
+    </p>
+    <p>Creating a working contact form seemed like it would be
+      such a straightforwards task, but coding this for the first
+      time (there's always a first time for everything, right?)
+      was probably the trickiest part of this project. But that
+      work paid off, and it makes me very satisfied to see it now
+      working in both development and production environments!
+      Why don't you try it out yourself by clicking on "message me"
+      on my contact page...? The carousel modal (see below) also caused
+      some headaches to implement correctly and without bugs, but
+      again, sticking with it and working through those bugs gives
+      an an even greater feeling to see it working as envisioned!
+    </p>
+    <h5>Technical Features:</h5>
+    <ul>
+      <li>Ruby On Rails</li>
+      <li>Embedded Ruby, HTML, JavaScript Stimulus and SCSS</li>
+      <li>Rails ActionMailer for the working contact form</li>
+      <li>Production hosting using Heroku</li>
+      <li>Responsive design across a variety of devices</li>
+      <li>SSL Certificate for encryption and security</li>
+    </ul>
+    <div class="link-right">
+      <%= link_to "https://github.com/BethGeast/beth-codes", target: "_blank", class: "source-link-extended" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+      <% end %>
+    </div>
+  </div>
+  <div class="projects-card">
+    <h3>GigBuddy</h3>
+    <p>A mobile app for users to find others with whom
+      they share a music taste, allowing new friendships
+      to be made and with the idea for users to find friends
+      to attend music concerts with.
+    </p>
+    <p>This was my final project during the Le Wagon bootcamp
+      I completed earlier this year. I was the lead developer for
+      this project, in a group with two other students, after
+      initially pitching the rough idea around half-way through
+      the course. In under ten days, we went from fully realising
+      what the features of the app would be, forming all user
+      stories and wireframing to presenting the working product,
+      in production, to a live audience.
+    </p>
+    <div class="link-right-extended">
+      <%= link_to "https://www.youtube.com/watch?v=qJBE-69A08c", target: "_blank", class: "source-link-extended" do %>
+        You can check out the recorded live demo of this on YouTube <i class="fa-brands fa-youtube"></i>
+      <% end %>
+    </div>
+    <h5>Technical Features:</h5>
+    <ul>
+      <li>Ruby On Rails Framework</li>
+      <li>Embedded Ruby, HTML, SCSS and JavaScript</li>
+      <li>Spotify API integrated to allow users to search and add their
+        favorite artists to their profiles (part of the key algorithm
+        to find potential matches with other users on the site). Also
+        links each artist's artwork as per their spotify profiles
+      </li>
+      <li>Devise Ruby Gem for secure user sign in/sign up</li>
+      <li>Pundit Ruby Gem to ensure users can only edit their own
+        profiles, and not any one else's
+      </li>
+      <li>ActiveStorage and Cloudinary for users to upload photos
+        to their profiles
+      </li>
+      <li>ActiveRecord/PostgreSQL database</li>
+      <li>Redis, Web Socket and ActionCable for live chat feature</li>
+      <li>Heroku for production hosting</li>
+      <li>SSL Certificate for encryption and security</li>
+    </ul>
+    <div class="link-double">
+      <%= link_to "https://github.com/BethGeast/gig-buddy/blob/master/README.md", target: "_blank", class: "source-link-reverse" do %>
+        <i class="fa-solid fa-file-code"></i> Read more about the app's features
+      <% end %>
+      <%= link_to "https://github.com/BethGeast/gig-buddy", target: "_blank", class: "source-link" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+      <% end %>
+    </div>
+    <br>
+    <div class="carousel-container" data-controller="carousel">
+      <div id="gigbuddyCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#gigbuddyModal">
+          <div class="carousel-item active" data-carousel-target="image">
+            <%= image_tag 'gb_landing_page.png', class: "d-block w-100", alt: "Screenshot of GigBuddy landing page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_view_my_profile.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view your profile page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_edit_profile.png', class: "d-block w-100", alt: "Screenshot of GigBuddy edit your profile page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_search_artists.png', class: "d-block w-100", alt: "Screenshot of GigBuddy search for artists to add to profile" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_artist_search_results.png', class: "d-block w-100", alt: "Screenshot of GigBuddy search results for artist search" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_success_alert.png', class: "d-block w-100", alt: "Screenshot of GigBuddy alert to inform user of successfully adding artist to their profile" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_swiper.png', class: "d-block w-100", alt: "Screenshot of GigBuddy main swiper page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_new_match.png', class: "d-block w-100", alt: "Screenshot of GigBuddy new match alert pop-up" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_view_matches.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view all my matches page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_chatroom.png', class: "d-block w-100", alt: "Screenshot of GigBuddy chatroom" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_view_a_match.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view a match's profile page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'gb_delete_match_confirm.png', class: "d-block w-100", alt: "Screenshot of GigBuddy confirm to remove a match" %>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#gigbuddyCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#gigbuddyCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal fade" id="gigbuddyModal" tabindex="-1" aria-labelledby="gigbuddyModalLabel" aria-hidden="true" data-carousel-target="modal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="gigbuddyModalCarousel" class="carousel slide" data-bs-ride="false" data-carousel-target="modalCarousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_landing_page.png', class: "d-block w-100", alt: "Screenshot of GigBuddy landing page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Landing Page</h5>
+                      <p>The view when a user first opens the app</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_view_my_profile.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view your profile page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>View Your Profile</h5>
+                      <p>Your profile view</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_edit_profile.png', class: "d-block w-100", alt: "Screenshot of GigBuddy edit your profile page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Edit Your Profile</h5>
+                      <p>Edit any details on your profile or update your photo</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_search_artists.png', class: "d-block w-100", alt: "Screenshot of GigBuddy search for artists to add to profile" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Search For Artists</h5>
+                      <p>Find more of your liked artists to add to your profile</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_artist_search_results.png', class: "d-block w-100", alt: "Screenshot of GigBuddy search results for artist search" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Artists Search Results</h5>
+                      <p>The first 5 relevant artists matching your search</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_success_alert.png', class: "d-block w-100", alt: "Screenshot of GigBuddy alert to inform user of successfully adding artist to their profile" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Success!</h5>
+                      <p>Alert when an action has been successful</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_swiper.png', class: "d-block w-100", alt: "Screenshot of GigBuddy main swiper page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Main Swiper</h5>
+                      <p>Swipe through your potential matches</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_new_match.png', class: "d-block w-100", alt: "Screenshot of GigBuddy new match alert pop-up" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>New Match!</h5>
+                      <p>Displayed when a new connection is made</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_view_matches.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view all my matches page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>View All Matches</h5>
+                      <p>List of all your matches - each is clickable</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_chatroom.png', class: "d-block w-100", alt: "Screenshot of GigBuddy chatroom" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Chatroom</h5>
+                      <p>Chat with a match, visit their profile, or remove</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_view_a_match.png', class: "d-block w-100", alt: "Screenshot of GigBuddy view a match's profile page" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>View a Match's Profile Page</h5>
+                      <p>Explore a match's profile</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'gb_delete_match_confirm.png', class: "d-block w-100", alt: "Screenshot of GigBuddy confirm to remove a match" %>
+                    <div class="carousel-caption custom-caption">
+                      <h5>Delete a Match</h5>
+                      <p>Confirm you definitely want to delete a match to prevent accidental removals!</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#gigbuddyModalCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="projects-card">
+    <h3>Dogbnb</h3>
+    <p>A website for dog owners to find kennels/accommodation
+      for their pet to stay in whilst they are away.
+    </p>
+    <p>Prior to our final projects, we were tasked with
+      creating a clone Airbnb website as a mock project.
+      In less than five days, myself (again as lead developer)
+      and my two teammates went from deciding on our own
+      approach to the 'Airbnb' style site, through user stories
+      and wireframing, to presenting the completed site on
+      the afternoon of the fifth day. This challenge was my
+      introduction to working on a full project and as a team,
+      handling task delegation, different branches and the conflicts
+      which would inevitably appear. We were very ambitious as
+      a team, and although had hoped to add a few more features,
+      I am proud of what we achieved as a first teamworking
+      project, and in less than five days start to finish!
+    </p>
+    <h5>Technical Features:</h5>
+    <ul>
+      <li>Ruby On Rails</li>
+      <li>Embedded Ruby, HTML, SCSS, JavaScript</li>
+      <li>ActiveRecord/PostgreSQL database</li>
+      <li>ActiveStorage and Cloudinary for photo upload and attachment</li>
+      <li>Simpleform and bootstrap with further SCSS styling to tweak to design</li>
+      <li>Devise Ruby Gem for secure user sign-up/sign-in</li>
+      <li>Heroku for production hosting</li>
+      <li>Photo carousel for each item listing, both on index and show pages</li>
+      <li>Modal overlay on individual item listing page when item clicked on,
+        so that user can better view all attached images
+      </li>
+      <li>JavaScript date picker and math calculation to quote total price for user when placing booking</li>
+      <li>Functional search bar feature to improve user experience</li>
+    </ul>
+    <div class="link-double">
+      <%= link_to "https://github.com/BethGeast/DogBnB/blob/master/README.md", target: "_blank", class: "source-link-reverse" do %>
+        <i class="fa-solid fa-file-code"></i> Read more about the app's features
+      <% end %>
+      <%= link_to "https://github.com/BethGeast/DogBnB", target: "_blank", class: "source-link" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+      <% end %>
+    </div>
+    <br>
+    <div class="carousel-container" data-controller="carousel">
+      <div id="dogbnbCarousel" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-inner" data-bs-toggle="modal" data-bs-target="#dogbnbModal">
+          <div class="carousel-item active" data-carousel-target="image">
+            <%= image_tag 'dogbnb_landing_page.png', class: "d-block w-100", alt: "Screenshot of dogbnb landing page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_login.png', class: "d-block w-100", alt: "Screenshot of dogbnb login" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_search_bar.png', class: "d-block w-100", alt: "Screenshot of dogbnb search bar" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_item_show.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing show page" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_reviews.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing's reviews" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_item_reserve.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing - place reservation" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_user_dropdown.png', class: "d-block w-100", alt: "Screenshot of dogbnb user dropdown" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_view_bookings.png', class: "d-block w-100", alt: "Screenshot of dogbnb view all your bookings" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_favorites_index.png', class: "d-block w-100", alt: "Screenshot of dogbnb view all your favorites" %>
+          </div>
+          <div class="carousel-item" data-carousel-target="image">
+            <%= image_tag 'dogbnb_list_new_item.png', class: "d-block w-100", alt: "Screenshot of dogbnb create a new listing" %>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#dogbnbCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#dogbnbCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+      <div class="modal fade" id="dogbnbModal" tabindex="-1" aria-labelledby="dogbnbModalLabel" aria-hidden="true" data-carousel-target="modal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="dogbnbModalCarousel" class="carousel slide" data-bs-ride="false" data-carousel-target="modalCarousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_landing_page.png', class: "d-block w-100", alt: "Screenshot of dogbnb landing page" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Landing Page</h5>
+                      <p>The view when a user first lands on the site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_login.png', class: "d-block w-100", alt: "Screenshot of dogbnb login" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Login</h5>
+                      <p>Sign in or create an account for site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_search_bar.png', class: "d-block w-100", alt: "Screenshot of dogbnb search bar" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Filter Options</h5>
+                      <p>Search for listing matching your requirements</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_item_show.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing show page" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View a Listing</h5>
+                      <p>View more information about a listing</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_reviews.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing's reviews" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View Reviews</h5>
+                      <p>Read through or leave a review for a listing</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_item_reserve.png', class: "d-block w-100", alt: "Screenshot of dogbnb listing - place reservation" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Make a Booking</h5>
+                      <p>Enter details and make a reservation</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_user_dropdown.png', class: "d-block w-100", alt: "Screenshot of dogbnb user dropdown" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Dropdown Options</h5>
+                      <p>Navigate the site</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_view_bookings.png', class: "d-block w-100", alt: "Screenshot of dogbnb view all your bookings" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View All Bookings</h5>
+                      <p>View all your placed bookings for reference</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_favorites_index.png', class: "d-block w-100", alt: "Screenshot of dogbnb view all your favorites" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>View Favorites</h5>
+                      <p>Revisit listings you've favorited</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item" data-carousel-target="modalItem">
+                    <%= image_tag 'dogbnb_list_new_item.png', class: "d-block w-100", alt: "Screenshot of dogbnb create a new listing" %>
+                    <div class="carousel-caption custom-caption-dogbnb">
+                      <h5>Create a Listing</h5>
+                      <p>Create a new listing for your own place for others to book!</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#dogbnbModalCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#dogbnbModalCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="projects-card">
+    <h3>LocalMarket</h3>
+    <p>After completion of my web development course, I was approached and asked if
+      I wanted to be involved in a new project a friend had an idea for - an online
+      marketplace for users to find local farmers/producers of homegrown food
+      products (e.g. milk, eggs, fruits, vegetables etc.), or for these farmers
+      to list their produce online for others to find and buy. My role in this
+      project was assisting with the creation and set-up of the back-end side of
+      the application.
+    </p>
+    <h5>Technical Features I was involved in:</h5>
+    <ul>
+      <li>Creating the ActiveRecord database/schema with associations, all models (and required
+        validations for each), controllers and view pages, along with their matching routes,
+        and ActiveStorage and Cloudinary for image upload
+      </li>
+      <li>Installing and implementing Devise and Pundit Ruby Gems, to handle secure user
+        sign-in/sign-up, authentication and authorization
+      </li>
+      <li>Creating a live-chat feature between sellers and buyers, using
+        Web Socket, ActionCable and JavaScript
+      </li>
+    </ul>
+    <div class="link-right">
+      <%= link_to "https://github.com/Joshjok86/localmarket", target: "_blank", class: "source-link-extended" do %>
+        View the source code <i class="fa-solid fa-laptop-code"></i>
+      <% end %>
+    </div>
+  </div>
+</div>

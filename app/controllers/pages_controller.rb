@@ -1,12 +1,17 @@
 class PagesController < ApplicationController
   def home
+    set_meta_tags title: "Home | BethCodes Portfolio",
+                  description: "I am a full stack web developer and software engineer currently specialising in Ruby on Rails projects."
   end
 
   def about
-    # @hobbies = ["Dogs", "Video Gaming", "Music (Listening, Live & Performing)", "Puzzles"]
+    set_meta_tags title: "About Me | BethCodes Portfolio",
+                  description: "Learn more about my background and who I am"
   end
 
   def contact
+    set_meta_tags title: "Contact | BethCodes Portfolio",
+                  description: "Get in touch for web development inquiries and collaboration."
   end
 
   def send_contact_email
@@ -36,10 +41,13 @@ class PagesController < ApplicationController
     @bonus = ["Microsoft Office Suite", "Full Clean UK Driving Licence"]
     @bonus_left = @bonus[0]
     @bonus_right = @bonus[1]
-    # @strengths = ["Trustworthy & Reliable", "Empathetic & Approachable", "Fast Learner", "Dedicated", "Strong Listener", "Team Player", "Organisation"]
+    set_meta_tags title: "Resume | BethCodes Portfolio",
+                  description: "View my full resume and which languages and technical tools I specialise in."
   end
 
   def projects
+    set_meta_tags title: "Projects | BethCodes Portfolio",
+                  description: "Explore my past web development projects, and the technical specifications of each"
   end
 
   private

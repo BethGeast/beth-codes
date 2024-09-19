@@ -1,7 +1,52 @@
 // about page styling
+.page-banner-about {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 75px;
+  margin-top: 25px;
+  align-items: center;
+  width: 100vw;
+  font-size: 32px;
+}
+
+.back-button-about {
+  font-size: 32px;
+  margin-left: 36px;
+
+  i {
+    text-decoration: none;
+    color: $darkest-pink;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  &:hover i {
+    color: $white;
+    background-color: $hot-pink;
+    border: 1px solid $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.page-title-about {
+  text-align: right;
+  color: $darkest-pink;
+  margin-right: 36px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 0;
+  }
+}
 
 .page-container {
  margin: 0 auto;
+ margin-top: 25px;
+ margin-bottom: 50px;
  width: 100vw;
  min-height: 100vh;
  display: flex;
@@ -14,10 +59,20 @@
   min-height: 100vh;
   margin: 0 auto;
   display: flex;
-  margin-top: 125px;
+  margin-top: 175px;
   flex-direction: column;
   align-items: center;
   flex-grow: 1;
+}
+
+.photo-credit {
+  font-size: 12px;
+  padding-top: 0 !important;
+
+  a {
+    text-decoration: none;
+    color: $even-darker-pink;
+  }
 }
 
 .card-left {
@@ -33,7 +88,6 @@
     border-radius: 3px;
     padding: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -42,14 +96,16 @@
   h3 {
     color: $darkest-pink;
     padding: 4px;
-    margin: 4px;
+    margin: 8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   p {
     color: $even-darker-pink;
-    padding: 4px;
-    margin: 4px;
-    margin-bottom: 8px;
+    padding: 8px;
+    margin: 8px;
+    margin-top: 0;
   }
 
   .card-left-img {
@@ -60,10 +116,11 @@
   }
 
   img {
-    border: 1px solid $even-darker-pink;
     border-radius: 3px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    max-height: 250px;
+    width: auto;
   }
 }
 
@@ -80,7 +137,6 @@
     border-radius: 3px;
     padding: 8px;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;
     display: flex;
     flex-direction: column;
     text-align: right;
@@ -89,14 +145,16 @@
   h3 {
     color: $darkest-pink;
     padding: 4px;
-    margin: 4px;
+    margin: 8px;
+    margin-bottom: 0;
+    padding-bottom: 0;
   }
 
   p {
     color: $even-darker-pink;
-    padding: 4px;
-    margin: 4px;
-    margin-bottom: 8px;
+    padding: 8px;
+    margin: 8px;
+    margin-top: 0;
   }
 
   .card-right-img {
@@ -107,10 +165,99 @@
   }
 
   img {
-    border: 1px solid $even-darker-pink;
     border-radius: 3px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
     overflow: hidden;
+    max-height: 250px;
+    width: auto;
+  }
+}
+
+.signature-card {
+  display: flex;
+  margin: 0 auto;
+  margin-top: 75px;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  border-radius: 3px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  background: $darkest-pink;
+  background: -webkit-linear-gradient(90deg, $hot-pink 0%, $button-pink 15%, $faint-pink 30%, $white 50%, $faint-pink 70%, $button-pink 85%, $hot-pink 100%);
+  background: linear-gradient(90deg, $hot-pink 0%, $button-pink 15%, $faint-pink 30%, $white 50%, $faint-pink 70%, $button-pink 85%, $hot-pink 100%);
+}
+
+.row-image-start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0;
+  flex: 1 1 30%;
+
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.row-image-end {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 0;
+  flex: 1 1 30%;
+
+  img {
+    height: auto;
+    width: 100%;
+    border-radius: 3px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.signature-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 40%;
+
+  img {
+    height: auto;
+    max-width: 90%;
+    // border-radius: 3px;
+    // border: 1px solid $even-darker-pink;
+    // box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+}
+
+@media (min-width: 901px) {
+  .signature-card {
+    height: 200px;
+    width: 90%;
+    overflow: hidden;
+    flex-direction: row;
+  }
+
+  .row-image-start, .row-image-end {
+    height: 200px;
+
+    img {
+      height: 200px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
+  .signature-image {
+    max-height: 125px;
+
+    img {
+      max-height: 125px;
+      width: auto;
+      object-fit: contain;
+    }
   }
 }
 
@@ -130,12 +277,15 @@
   .card-right-img {
     margin-right: 8px;
   }
+
+  .photo-credit {
+    font-size: 10px;
+  }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .about-card-container {
-    margin-top: 75px;
-    margin-bottom: 75px;
+    margin-top: 125px;
     align-items: center;
   }
 
@@ -179,12 +329,76 @@
     margin-top: 8px;
     margin-bottom: 8px;
     margin-right: 0;
+    margin-left: 0;
     justify-content: center !important;
+    align-items: center;
+    flex: 1 1 auto;
+  }
+
+  .back-button-about {
+    margin-left: 24px;
+  }
+
+  .page-banner-about {
+    top: 75px;
+    margin-top: 16px;
+  }
+
+  .page-title-about {
+    margin-right: 24px;
+  }
+
+  .page-title-about h3 {
+    font-size: 24px;
+  }
+
+  .signature-card {
+    width: 100%;
+  }
+}
+
+@media (max-width: 450px) {
+  .back-button-about {
+    margin-left: 20px;
+  }
+
+  .page-banner-about {
+    top: 60px;
+    margin-top: 16px;
+  }
+
+  .page-title-about {
+    margin-right: 20px;
+  }
+
+  .page-title-about h3 {
+    font-size: 24px;
+  }
+
+  .page-container {
+    margin-bottom: 50px;
   }
 }
 
 @media (max-width: 400px) {
   .about-card-container {
-    margin-top: 50px;
+    margin-top: 100px;
+  }
+
+  .back-button-about {
+    margin-left: 20px;
+  }
+
+  .page-banner-about {
+    top: 50px;
+    margin-top: 8px;
+  }
+
+  .page-title-about {
+    margin-right: 20px;
+  }
+
+  .page-title-projects h3 {
+    font-size: 20px;
   }
 }

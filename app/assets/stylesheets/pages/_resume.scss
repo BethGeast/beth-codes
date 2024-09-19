@@ -1,9 +1,53 @@
 // resume page styling
+.page-banner-resume {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  top: 75px;
+  margin-top: 25px;
+  align-items: center;
+  width: 100vw;
+  font-size: 32px;
+}
+
+.back-button-resume {
+  font-size: 32px;
+  margin-left: 36px;
+
+  i {
+    text-decoration: none;
+    color: $darkest-pink;
+    background-color: $white;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: 0.3s ease;
+  }
+
+  &:hover i {
+    color: $white;
+    background-color: $hot-pink;
+    border: 1px solid $darkest-pink;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+}
+
+.page-title-resume {
+  text-align: right;
+  color: $darkest-pink;
+  margin-right: 36px;
+
+  h3 {
+    font-size: 28px;
+    font-weight: lighter;
+    margin-bottom: 0;
+  }
+}
+
 .resume-container {
   margin: 0 auto;
   width: 100%;
-  margin-top: 150px;
-  margin-bottom: 125px;
+  margin-top: 175px;
+  margin-bottom: 50px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -24,19 +68,19 @@
   font-size: 2rem;
   background: linear-gradient(to right, $darkest-pink 8%, $hot-pink 18%, $darkest-pink 33%);
   background-size: 1000px 100%;
-  background-clip: text;
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: shimmer 2s infinite linear;
-}
 
-.resume-link :hover {
-  background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
-  background-size: 1000px 100%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shimmer 2s infinite linear;
+  &:hover {
+    background: linear-gradient(to right, $barbie-pink 8%, $soft-light-pink 18%, $barbie-pink 33%);
+    background-size: 1000px 100%;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 2s infinite linear;
+  }
 }
 
 @keyframes shimmer {
@@ -175,24 +219,73 @@
   }
 
   .resume-container {
-    margin-top: 120px;
-    margin-bottom: 104px;
+    margin-top: 175px;
   }
 
   .bonus-card {
     margin: 16px;
   }
+
+  .back-button-resume {
+    margin-left: 24px;
+  }
+
+  .page-banner-resume {
+    top: 75px;
+    margin-top: 16px;
+  }
+
+  .page-title-resume {
+    margin-right: 24px;
+  }
+
+  .page-title-resume h3 {
+    font-size: 24px;
+  }
 }
 
 @media (max-width: 450px) {
   .resume-container {
-    margin-top: 104px;
+    margin-top: 150px;
+  }
+
+  .back-button-resume {
+    margin-left: 20px;
+  }
+
+  .page-banner-resume {
+    top: 60px;
+    margin-top: 16px;
+  }
+
+  .page-title-resume {
+    margin-right: 20px;
+  }
+
+  .page-title-resume h3 {
+    font-size: 24px;
   }
 }
 
 @media (max-width: 400px) {
   .resume-container {
-    margin-top: 88px;
-    margin-bottom: 88px;
+    margin-top: 125px;
+  }
+
+  .back-button-resume {
+    margin-left: 20px;
+  }
+
+  .page-banner-resume {
+    top: 50px;
+    margin-top: 8px;
+  }
+
+  .page-title-resume {
+    margin-right: 20px;
+  }
+
+  .page-title-resume h3 {
+    font-size: 20px;
   }
 }
