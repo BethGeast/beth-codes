@@ -34,10 +34,10 @@ class PagesController < ApplicationController
   end
 
   def resume
-    @techstack_one = ["Ruby", "Ruby On Rails (v7)", "HTML5", "CSS/SCSS", "Bootstrap", "Javascript", "Stimulus", "ActiveRecord"]
-    @techstack_two = ["Git", "Github", "Test Driven Development", "Z-Shell", "Visual Studio Code", "Ubuntu", "Heroku"]
-    @other = ["Python3", "SQL & PostgreSQL", "Redis", "Cloudinary", "Action Cable", "Websocket", "Figma"]
-    @learning = ["React", "Redux", "Webpack", "Node.js", "AWS"]
+    @techstack_one = ["PHP", "Zoho Creator", "Zoho CRM", "Deluge", "Ruby", "Ruby On Rails (v7)", "HTML5", "CSS/SCSS"]
+    @techstack_two = ["Javascript", "JSON", "REST API", "Bootstrap", "Stimulus", "Git & Github", "Visual Studio Code", "UX"]
+    @other = ["SQL & PostgreSQL", "Agile Development", "Kanban", "Test Driven Development", "Ubuntu", "Z-Shell", "Heroku", "Figma"]
+    @learning = ["Project Management Practices", "Accessibility Testing"]
     @bonus = ["Microsoft Office Suite", "Full Clean UK Driving Licence"]
     @bonus_left = @bonus[0]
     @bonus_right = @bonus[1]
